@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*header*/
+
+#toggle-input{
+    display: none;
+}
+
+#master-header{
+    position: fixed;
+    width: 100%;
+    background-color: #d4414e;
+}
+
+.header-wrap{
+    display: flex;
+    padding: 8px 20px 8px 3px;
+}
+
+/*header logo part*/
+.header-wrap .brand-logo img,
+.header-wrap .user-logo img{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 10px;
+}
+.header-wrap .brand-logo{
+    margin: auto;
+    margin-left: 0;
+}
+
+.header-wrap .brand-logo h3{
+    color:#fff;
+}
+
+.header-wrap .brand-logo h3{
+    line-height: 23px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 1em;
+    letter-spacing: .5px;
+}
+
+.header-wrap .brand-logo .title-deco{
+    font-weight: 400;
+}
+
+/*navigation contact bar*/
+
+.wrap-header .contact-bar{
+    display: flex;
+    width: 100%;
+    background-color: #962e37;
+    height: 24px;
+}
+
+.wrap-header .contact-element-deco{
+    right: 2.5rem;
+    position: absolute;
+    font-size: 13px;
+    top: 4px;
+    background-color: #b41616;
+    padding: 0 25px;
+    border-radius: 4px;
+    border: 0;
+}
+
+.wrap-header .contact-num-deco{
+    font-weight: 700;
+}
+
+/*search part*/
+.header-wrap .header-search{
+    margin: auto;
+    margin-left: 0;
+    position: relative;
+    width: calc(100% - 40em);
+}
+
+.header-wrap .header-search input{
+    border-radius: 5px;
+    padding: 7px;
+    width: 100%;
+}
+
+.header-wrap .header-search img{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+}
+
+/*------------Media Queries -----------*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .header-wrap .header-search{
+        width: calc(100% - 30em);
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .header-wrap .header-search{
+        width: calc(100% - 30em);
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .header-wrap .header-search {
+        display: none;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .header-wrap .brand-logo h3 {
+        line-height: 18px;
+        font-size: 14px;
+    }
+
+    /*header logo part*/
+    .header-wrap .brand-logo img,
+    .header-wrap .user-logo img{
+        height: 2em;
+        width: 2em;
+        margin-left: 10px;
+    }
+
+    /*header*/
+    .header-wrap {
+        padding: 5px 16px 5px 5px;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    .header-wrap .brand-logo h3 {
+        line-height: 16px;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
